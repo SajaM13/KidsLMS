@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
 class main_button extends StatelessWidget {
-  Function function_;
+  // Function function_;
   double height_;
   double width_;
   double margin_;
@@ -10,10 +10,11 @@ class main_button extends StatelessWidget {
   Color color_2;
   Color textColor;
   String text;
+  // String routeName;
+  Function function;
 
   main_button({
     Key? key,
-    required this.function_,
     required this.height_,
     required this.width_,
     required this.margin_,
@@ -21,13 +22,18 @@ class main_button extends StatelessWidget {
     required this.color_2,
     required this.textColor,
     required this.text,
+    // required this.routeName,
+    required this.function,
   }) : super(key: key);
-  Widget main_Button_dec() {
+
+  @override
+  Widget build(BuildContext context) {
     return Container(
       height: height_,
       margin: EdgeInsets.all(margin_),
       child: InkWell(
-        onTap: () => function_,
+        onTap: () => function(),
+        // Navigator.pushNamed(context, routeName),
         child: Ink(
           decoration: BoxDecoration(
               gradient: LinearGradient(
@@ -46,17 +52,6 @@ class main_button extends StatelessWidget {
             ),
           ),
         ),
-      ),
-    );
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      child: Column(
-        children: <Widget>[
-          main_Button_dec(),
-        ],
       ),
     );
   }

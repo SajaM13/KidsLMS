@@ -9,6 +9,7 @@ class container_decoration_ extends StatelessWidget {
   Color color_1;
   Color color_2;
   Color color_3;
+  Color color_4;
 
   container_decoration_({
     Key? key,
@@ -19,6 +20,7 @@ class container_decoration_ extends StatelessWidget {
     required this.color_1,
     required this.color_2,
     required this.color_3,
+    required this.color_4,
   }) : super(key: key);
 
   Widget main_container() {
@@ -36,14 +38,20 @@ class container_decoration_ extends StatelessWidget {
             children: <Widget>[
               Positioned(
                   top: 10,
-                  right: -140,
+                  right: -130,
                   child: _circularContainer(container_width * .6, color_1)),
               Positioned(
-                  top: -60,
+                  top: -30,
+                  right: 250,
                   left: -70,
                   child: _circularContainer(container_width * .3, color_2)),
               Positioned(
-                  top: -220,
+                  top: 150,
+                  right: 100,
+                  left: -70,
+                  child: _circularContainer(container_width * .1, color_4)),
+              Positioned(
+                  top: -200,
                   right: -50,
                   child: _circularContainer(
                       container_width * .6, Colors.transparent,

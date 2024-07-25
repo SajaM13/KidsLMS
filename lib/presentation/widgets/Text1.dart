@@ -3,10 +3,10 @@ import 'package:google_fonts/google_fonts.dart';
 
 import '../../constants/colors.dart';
 
-
-Text Text1({required String value,required double Size}){
+Text Text1({required String value, required double Size}) {
   return Text(
     value,
-    style:GoogleFonts.quicksand(fontSize: Size,fontWeight: FontWeight.bold,color: MyAppColors.purple),
+    style: GoogleFonts.quicksand(
+        fontSize: Size, fontWeight: FontWeight.bold, color: MyAppColors.purple),
   );
 }

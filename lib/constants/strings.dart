@@ -1,2 +1,14 @@
-const path_screen = "/";
-
+const path_screen = "path_screen";
+const main_screen = "/";
+const levels_content = "levels_content";
+const lessons_content = "lessons_content";
+const lessons = "lessons";
+const gameslist = "games_list";
+const top3 = "top3";
+const top3_list = "top3_list";
+const drag_and_drop = "drag_and_drop";
+const word_search_game = "WordSearchGame";
+const pdf_screen = "pdf_screen";
+//String token = "";
+const LogIn_baseurl = "http://192.168.43.207:8000/api";
+const path_BaseUrl = "http://192.168.43.207:8000/api";
